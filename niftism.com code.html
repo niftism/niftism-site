@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Form your Florida LLC from anywhere in the world. Niftism files directly with Sunbiz.org — EIN, Stripe, Amazon, Shopify ready. $125 FL state fee included.">
+<title>Niftism — Florida LLC Formation for Foreign Entrepreneurs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   NIFTISM v4  —  Exact ZenBusiness layout from screenshot
+   
+   KEY DESIGN DECISIONS matching the screenshot:
+   · Pure white background (no tinted hero bg)
+   · Left: eyebrow + massive bold black H1 + body + green pill btn
+   · Right: LARGE CIRCLE image (~480px) with notification overlay
+   · Green: bright #3DC73D (ZenBusiness vivid green)
+   · H1: 800 weight, -0.03em tracking, ~52px
+   · No decorative backgrounds — clean white
+================================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* ZenBusiness exact green from screenshot — bright vivid green */
+  --g:     #3DC73D;
+  --gh:    #2DB02D;
+  --gd:    #1A8C1A;
+  --gl:    #EBF9EB;
+  --teal:  #3DC73D;
+  /* text */
+  --text:  #0D0D0D;
+  --t2:    #3D3D3D;
+  --t3:    #6B7280;
+  /* layout */
+  --bdr:   #E5E7EB;
+  --bg:    #F9FAFB;
+  --w:     #FFFFFF;
+  --amber: #F59E0B;
+  --blue:  #1C6AC1;
+  /* radii */
+  --r1:    6px;
+  --r2:    10px;
+  --r3:    16px;
+  --rpill: 999px;
+  /* font */
+  --f:     'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  /* shadows */
+  --s1:    0 1px 4px rgba(0,0,0,.07);
+  --s2:    0 4px 16px rgba(0,0,0,.09);
+  --s3:    0 12px 40px rgba(0,0,0,.13);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:var(--f);color:var(--text);background:var(--w);overflow-x:hidden;font-size:16px;line-height:1.5;letter-spacing:-0.005em}
+h1,h2,h3{font-family:var(--f);line-height:1.15;color:var(--text)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:var(--f);cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+.sect{padding:88px 0}
+
+/* ── LANG BAR ── */
+.lbar{background:#1F2937;padding:7px 48px;display:flex;align-items:center;justify-content:center;gap:4px;flex-wrap:wrap}
+.llbl{font-size:11px;color:rgba(255,255,255,.45);margin-right:6px}
+.lbtn{font-size:12px;font-weight:500;color:rgba(255,255,255,.65);background:none;border:none;padding:3px 10px;border-radius:20px;cursor:pointer;transition:all .15s}
+.lbtn:hover,.lbtn.on{background:rgba(255,255,255,.15);color:#fff;font-weight:600}
+
+/* ── NAVBAR — white, border bottom, logo left ── */
+.nav{position:sticky;top:0;z-index:200;height:64px;background:var(--w);border-bottom:1px solid var(--bdr);display:flex;align-items:center}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo{font-size:22px;font-weight:800;color:var(--text);letter-spacing:-0.04em;text-decoration:none}
+.logo span{color:var(--g)}
+.nlinks{display:flex;align-items:center;gap:28px}
+.nlinks a{font-size:14px;font-weight:500;color:var(--t2);transition:color .15s}
+.nlinks a:hover{color:var(--text)}
+.nr{display:flex;align-items:center;gap:10px}
+.nlog{font-size:14px;font-weight:500;color:var(--t2);background:none;border:none}
+.nlog:hover{color:var(--text)}
+.ncta{font-size:14px;font-weight:700;padding:9px 20px;background:var(--g);color:var(--w);border:none;border-radius:var(--rpill);transition:background .15s}
+.ncta:hover{background:var(--gh)}
+.hbg{display:none;background:none;border:none;padding:4px}
+.hbg span{display:block;width:22px;height:2px;background:var(--text);margin:5px 0;border-radius:2px}
+
+/* ================================================================
+   HERO — exact ZenBusiness layout from screenshot
+   Left: text stack
+   Right: large circle image + floating notification card
+================================================================ */
+.hero{
+  background:var(--w);
+  padding:72px 0 80px;
+  overflow:hidden;
+}
+.hero .wrap{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:48px;
+}
+/* LEFT SIDE */
+.hero-left{}
+/* eyebrow — "MAKE YOUR BUSINESS OFFICIAL" style */
+.hero-eye{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--t3);
+  margin-bottom:16px;
+}
+/* H1 — ZenBusiness massive bold black */
+.hero-h1{
+  font-size:clamp(38px,4.2vw,56px);
+  font-weight:800;
+  line-height:1.08;
+  letter-spacing:-0.03em;
+  color:var(--text);
+  margin-bottom:20px;
+}
+.hero-h1 .hl{color:var(--g)}
+/* body text */
+.hero-p{
+  font-size:18px;
+  font-weight:400;
+  color:var(--t2);
+  line-height:1.65;
+  margin-bottom:32px;
+  max-width:420px;
+  letter-spacing:-0.005em;
+}
+/* BIG GREEN PILL BUTTON — exact ZenBusiness style */
+.hero-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  font-weight:800;
+  padding:18px 40px;
+  background:var(--g);
+  color:var(--w);
+  border:none;
+  border-radius:var(--rpill);
+  cursor:pointer;
+  transition:background .15s,transform .1s;
+  letter-spacing:-0.01em;
+  margin-bottom:14px;
+}
+.hero-cta:hover{background:var(--gh);transform:translateY(-1px)}
+/* subtext under CTA */
+.hero-sub{
+  font-size:14px;
+  font-weight:400;
+  color:var(--t3);
+  margin-bottom:28px;
+  letter-spacing:-0.005em;
+}
+/* Trustpilot row */
+.tp-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tp-label{font-size:15px;font-weight:700;color:var(--text)}
+.tp-stars{display:flex;gap:2px}
+.tp-star{
+  width:22px;height:22px;
+  background:var(--g);
+  display:flex;align-items:center;justify-content:center;
+  border-radius:2px;
+}
+.tp-star svg{width:13px;height:13px;fill:#fff}
+.tp-count{font-size:15px;color:var(--text);font-weight:400}
+.tp-logo{display:flex;align-items:center;gap:5px;font-size:14px;font-weight:700;color:var(--text)}
+.tp-ico{
+  width:20px;height:20px;
+  background:var(--g);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;color:#fff;font-weight:800;
+}
+
+/* RIGHT SIDE — large circle image with notification card overlay */
+.hero-right{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px 0 20px 20px;
+}
+/* THE LARGE CIRCLE — ZenBusiness ~480px diameter */
+.hero-circle{
+  width:480px;
+  height:480px;
+  border-radius:50%;
+  overflow:hidden;
+  flex-shrink:0;
+  position:relative;
+}
+.hero-circle img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 15%;
+  display:block;
+}
+/* NOTIFICATION CARD — floats on top-left of circle like ZenBusiness */
+.notif-card{
+  position:absolute;
+  top:72px;
+  left:-8px;
+  background:var(--w);
+  border-radius:var(--r2);
+  padding:13px 16px;
+  box-shadow:0 4px 24px rgba(0,0,0,.14);
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  min-width:260px;
+  max-width:300px;
+  z-index:10;
+}
+.notif-icon{
+  width:36px;height:36px;
+  border-radius:var(--r1);
+  background:var(--g);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-size:14px;font-weight:800;color:#fff;
+  letter-spacing:-0.04em;
+}
+.notif-body{flex:1;min-width:0}
+.notif-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.notif-brand{font-size:13px;font-weight:700;color:var(--text)}
+.notif-time{font-size:11px;color:var(--t3)}
+.notif-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px}
+.notif-msg{font-size:12px;color:var(--t3);line-height:1.45}
+
+/* ── STATS BAR ── */
+.sbar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);background:var(--w)}
+.si-{padding:24px 20px;text-align:center;border-right:1px solid var(--bdr)}
+.si-:last-child{border-right:none}
+.sn{font-size:30px;font-weight:800;color:var(--text);letter-spacing:-0.03em}
+.sl-{font-size:13px;color:var(--t3);margin-top:4px;font-weight:400}
+
+/* ── HOW IT WORKS ── */
+.how{padding:88px 0;background:var(--w)}
+.eye{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:10px}
+.h2{font-size:clamp(28px,3vw,36px);font-weight:800;letter-spacing:-0.025em;line-height:1.15;color:var(--text);margin-bottom:12px}
+.sub{font-size:17px;font-weight:400;color:var(--t3);line-height:1.65;max-width:520px}
+.cen{text-align:center}
+.cen .sub{margin:0 auto}
+.sh{margin-bottom:52px}
+/* Steps — ZenBusiness style: circle image, number, title, desc */
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.sc-{text-align:center}
+/* 80px circle images — proportional to ZenBusiness */
+.sci{width:80px;height:80px;border-radius:50%;overflow:hidden;margin:0 auto 14px;border:2.5px solid #E5E7EB;flex-shrink:0}
+.sci img{width:100%;height:100%;object-fit:cover;display:block}
+.snum{width:28px;height:28px;border-radius:50%;background:var(--text);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.stit{font-size:16px;font-weight:700;color:var(--text);margin-bottom:7px;letter-spacing:-0.015em}
+.sdsc{font-size:14px;color:var(--t3);line-height:1.6;font-weight:400}
+
+/* ── SPLIT SECTIONS ── */
+.spl{display:grid;grid-template-columns:1fr 1fr;min-height:420px;overflow:hidden}
+.spimg{overflow:hidden}
+.spimg img{width:100%;height:100%;object-fit:cover;display:block}
+.spbdy{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;background:var(--w)}
+.spbdy .h2{margin-bottom:14px}
+.bpara{font-size:15px;color:var(--t2);line-height:1.7;margin-bottom:22px;font-weight:400}
+.cks{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.ck{display:flex;align-items:flex-start;gap:9px;font-size:14px;color:var(--t2);line-height:1.5;font-weight:400}
+.cki{width:20px;height:20px;border-radius:50%;background:var(--gl);color:var(--gd);font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.spl-alt{background:var(--bg)}
+.spl-alt .spimg{order:2}
+.spl-alt .spbdy{order:1;background:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:15px;font-weight:700;padding:12px 24px;border-radius:var(--rpill);border:none;cursor:pointer;transition:background .15s,transform .1s;letter-spacing:-0.005em}
+.bg{background:var(--g);color:#fff}
+.bg:hover{background:var(--gh)}
+.bo{background:#fff;color:var(--text);border:2px solid var(--text)}
+.bo:hover{background:var(--bg)}
+
+/* ── PLATFORMS ── */
+.plat{padding:72px 0;background:var(--bg)}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:800px;margin:0 auto}
+.pc{background:#fff;border:1px solid var(--bdr);border-radius:var(--r3);padding:24px 16px;text-align:center;transition:box-shadow .2s,transform .15s}
+.pc:hover{box-shadow:var(--s2);transform:translateY(-3px)}
+.plogo{font-size:18px;font-weight:800;margin-bottom:5px;letter-spacing:-0.02em}
+.pname{font-size:12px;color:var(--t3);font-weight:500}
+.pok{font-size:11px;font-weight:700;color:var(--g);margin-top:4px}
+
+/* ── PRICING ── */
+.pric{padding:88px 0;background:#fff}
+.pgrd{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:980px;margin:0 auto}
+.pcard{border:1.5px solid var(--bdr);border-radius:20px;padding:30px 26px;background:#fff;position:relative;transition:box-shadow .2s}
+.pcard:hover{box-shadow:var(--s2)}
+.pcard.feat{border-color:var(--g);box-shadow:0 0 0 4px rgba(61,199,61,.09)}
+.ppill{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--g);color:#fff;font-size:11px;font-weight:800;padding:4px 16px;border-radius:20px;white-space:nowrap;letter-spacing:.01em}
+.pce{font-size:11px;font-weight:700;color:var(--t3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px}
+.pcn{font-size:22px;font-weight:800;color:var(--text);letter-spacing:-0.025em;margin-bottom:4px}
+.pcfor{font-size:13px;color:var(--t3);margin-bottom:16px}
+.pcp{font-size:34px;font-weight:800;color:var(--text);letter-spacing:-0.03em;line-height:1}
+.pcfr{font-size:14px;color:var(--t3);font-weight:400}
+.pcfe{font-size:12px;color:var(--t3);margin-top:4px;margin-bottom:18px}
+.pcbtn{display:block;width:100%;padding:12px;border-radius:var(--rpill);font-size:14px;font-weight:800;cursor:pointer;text-align:center;border:none;font-family:var(--f);margin-bottom:20px;transition:background .15s;letter-spacing:-0.005em}
+.pcbg{background:var(--g);color:#fff}
+.pcbg:hover{background:var(--gh)}
+.pcbo{background:#fff;color:var(--text);border:2px solid var(--bdr)}
+.pcbo:hover{border-color:var(--text)}
+.pcdiv{height:1px;background:var(--bdr);margin-bottom:18px}
+.pcul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.pcul li{display:flex;align-items:flex-start;gap:7px;font-size:13px;color:var(--t2);line-height:1.45;font-weight:400}
+.fchk{color:var(--g);font-size:11px;font-weight:800;flex-shrink:0;margin-top:2px}
+.fpls{color:var(--gd);font-size:11px;font-weight:800;flex-shrink:0;margin-top:2px}
+
+/* ── TESTIMONIALS ── */
+.testi{padding:88px 0;background:var(--bg)}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+.tcard{background:#fff;border:1px solid var(--bdr);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--amber);font-size:14px;letter-spacing:2px}
+.tq{font-size:14px;color:var(--t2);line-height:1.7;font-style:italic;flex:1;font-weight:400}
+.tp_{display:flex;align-items:center;gap:10px}
+/* 40px circle avatar */
+.av{width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--gl)}
+.av img{width:100%;height:100%;object-fit:cover;display:block}
+.avn{font-size:13px;font-weight:700;color:var(--text)}
+.avl{font-size:11px;color:var(--t3);margin-top:1px}
+
+/* ── FORM ── */
+.fsec{padding:88px 0;background:#1A1A1A;position:relative;overflow:hidden}
+.fsec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(61,199,61,.12) 0%,transparent 55%);pointer-events:none}
+.fhdr{text-align:center;margin-bottom:36px;position:relative}
+.fhdr .eye{color:rgba(255,255,255,.5)}
+.fhdr .h2{color:#fff}
+.fhdr .sub{color:rgba(255,255,255,.65);margin:0 auto}
+.fwrap{max-width:700px;margin:0 auto;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.3);position:relative}
+.ftop{background:var(--text);padding:26px 32px}
+.fteye{font-size:11px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px}
+.ftop h2{font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-bottom:4px}
+.ftop p{font-size:13px;color:rgba(255,255,255,.6)}
+/* step bar */
+.stpbar{display:flex;padding:20px 32px 0}
+.sti{flex:1;display:flex;flex-direction:column;align-items:center;position:relative}
+.sti:not(:last-child)::after{content:'';position:absolute;top:11px;left:58%;width:84%;height:1.5px;background:var(--bdr);z-index:0;transition:background .3s}
+.sti.dn:not(:last-child)::after{background:var(--g)}
+.stc{width:24px;height:24px;border-radius:50%;border:2px solid var(--bdr);background:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:var(--t3);z-index:1;position:relative;transition:all .2s}
+.stc.ac{background:var(--g);border-color:var(--g);color:#fff;box-shadow:0 0 0 4px rgba(61,199,61,.18)}
+.stc.dn{background:var(--text);border-color:var(--text);color:#fff}
+.stl{font-size:10px;color:var(--t3);margin-top:4px;text-align:center;font-weight:500}
+.stl.ac{color:var(--gd);font-weight:700}
+/* body */
+.fbdy{padding:26px 32px}
+.fp-{display:none}
+.fp-.on{display:block;animation:fin .2s ease}
+@keyframes fin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.fl-{font-size:12px;font-weight:700;color:var(--t2);margin-bottom:5px;display:flex;align-items:center;gap:3px}
+.req{color:#DC2626}
+.fh-{font-size:11px;color:var(--t3);margin-top:3px;line-height:1.5}
+.fg-{margin-bottom:15px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:15px}
+input[type=text],input[type=email],input[type=tel],select{width:100%;padding:10px 13px;border:1.5px solid var(--bdr);border-radius:var(--r1);font-size:14px;color:var(--text);background:#fff;font-family:var(--f);outline:none;transition:border-color .15s,box-shadow .15s}
+input:focus,select:focus{border-color:var(--g);box-shadow:0 0 0 3px rgba(61,199,61,.12)}
+input[readonly]{background:var(--bg);color:var(--t3);cursor:default}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.rc{border:1.5px solid var(--bdr);border-radius:var(--r1);padding:9px 11px;cursor:pointer;display:flex;align-items:center;gap:7px;font-size:13px;color:var(--t2);font-weight:500;transition:all .15s;line-height:1.3;user-select:none}
+.rc:hover{border-color:var(--g)}
+.rc.on{border-color:var(--g);background:var(--gl);color:#1A6B1A;font-weight:600}
+.rdot{width:13px;height:13px;border-radius:50%;border:2px solid var(--bdr);flex-shrink:0;transition:all .15s}
+.rc.on .rdot{background:var(--g);border-color:var(--g)}
+.ib{background:#EFF6FF;border-left:3px solid #3B82F6;border-radius:var(--r1);padding:10px 13px;font-size:12px;color:#1E40AF;line-height:1.6;margin-bottom:14px}
+.sb{background:var(--gl);border-left:3px solid var(--g);border-radius:var(--r1);padding:10px 13px;font-size:12px;color:var(--gd);line-height:1.6;margin-bottom:14px}
+.wb{background:#FFFBEB;border-left:3px solid #F59E0B;border-radius:var(--r1);padding:10px 13px;font-size:12px;color:#92400E;line-height:1.6;margin-bottom:14px}
+.popt{border:1.5px solid var(--bdr);border-radius:var(--r2);padding:12px 15px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;transition:all .15s;user-select:none}
+.popt:hover{border-color:var(--g)}
+.popt.on{border-color:var(--g);background:var(--gl)}
+.pol{display:flex;align-items:center;gap:10px}
+.pnm{font-size:14px;font-weight:700;color:var(--text)}
+.popt.on .pnm{color:var(--gd)}
+.pds{font-size:11px;color:var(--t3);margin-top:1px}
+.popt.on .pds{color:var(--g)}
+.ppr{font-size:18px;font-weight:800;color:var(--text);letter-spacing:-0.02em}
+.popt.on .ppr{color:var(--gd)}
+.trow2{background:var(--gl);border:1px solid rgba(61,199,61,.2);border-radius:var(--r2);padding:13px 16px;display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.tl2{font-size:13px;font-weight:700;color:var(--gd)}
+.tsub{font-size:11px;color:var(--g);margin-top:1px}
+.tp2{font-size:22px;font-weight:800;color:var(--gd);letter-spacing:-0.02em}
+.subbtn{display:block;width:100%;padding:15px;background:var(--g);color:#fff;border:none;border-radius:var(--rpill);font-family:var(--f);font-size:16px;font-weight:800;cursor:pointer;text-align:center;transition:background .15s;margin-top:4px;letter-spacing:-0.01em}
+.subbtn:hover{background:var(--gh)}
+.fleg{font-size:11px;color:var(--t3);padding:8px 32px 13px;text-align:center;line-height:1.55}
+.ffoot{display:flex;justify-content:space-between;align-items:center;padding:13px 32px;border-top:1px solid var(--bdr);background:var(--bg)}
+.flbl{font-size:12px;color:var(--t3)}
+.fnav{display:flex;gap:7px}
+.fbk{padding:8px 18px;border-radius:var(--rpill);font-size:13px;font-weight:700;background:#fff;border:1.5px solid var(--bdr);color:var(--t2);cursor:pointer;font-family:var(--f)}
+.fbk:hover{border-color:var(--text);color:var(--text)}
+.fnx{padding:8px 20px;border-radius:var(--rpill);font-size:13px;font-weight:800;background:var(--g);color:#fff;border:none;cursor:pointer;font-family:var(--f)}
+.fnx:hover{background:var(--gh)}
+
+/* ── FAQ ── */
+.faq{padding:88px 0;background:#fff}
+.faqlist{max-width:740px;margin:0 auto}
+.faqitem{border-bottom:1px solid var(--bdr)}
+.faqq{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 0;cursor:pointer;font-size:15px;font-weight:700;color:var(--text);transition:color .15s;letter-spacing:-0.012em}
+.faqq:hover{color:var(--g)}
+.faqico{font-size:22px;color:var(--g);flex-shrink:0;transition:transform .2s;line-height:1}
+.faqa{font-size:14px;color:var(--t2);line-height:1.75;padding-bottom:16px;display:none;font-weight:400}
+.faqitem.open .faqa{display:block}
+.faqitem.open .faqico{transform:rotate(45deg)}
+
+/* ── CTA STRIP ── */
+.cta{padding:80px 0;text-align:center;background:var(--bg)}
+.cta .h2{margin-bottom:10px}
+.cta p{font-size:17px;color:var(--t3);margin-bottom:28px}
+
+/* ── FOOTER ── */
+footer{background:#111827;padding:56px 0 28px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.flogo{font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.03em;margin-bottom:10px}
+.flogo span{color:var(--g)}
+.ftag{font-size:13px;color:#6B7280;line-height:1.65;margin-bottom:12px}
+.fdisc{font-size:11px;color:#4B5563;line-height:1.6}
+.fcolh{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#9CA3AF;margin-bottom:12px}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:8px}
+.flinks a{font-size:13px;color:#6B7280;cursor:pointer;transition:color .15s}
+.flinks a:hover{color:#fff}
+.fbot{border-top:1px solid #1F2937;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.fbot-l{font-size:12px;color:#4B5563}
+.fbot-r{display:flex;gap:16px}
+.fbot-r a{font-size:12px;color:#4B5563;cursor:pointer}
+.fbot-r a:hover{color:#9CA3AF}
+
+/* ── MOBILE MENU ── */
+.mob{display:none;position:fixed;inset:0;background:#fff;z-index:999;padding:18px 28px;flex-direction:column;gap:18px}
+.mob.open{display:flex}
+.mobhd{display:flex;justify-content:space-between;align-items:center}
+.mobx{background:none;border:none;font-size:26px;cursor:pointer;color:var(--text)}
+.moblinks{display:flex;flex-direction:column;gap:12px}
+.moblinks a{font-size:19px;font-weight:700;color:var(--text);cursor:pointer;letter-spacing:-0.02em}
+
+/* ── SCROLL REVEAL ── */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.rv.vi{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}
+.d2{transition-delay:.16s}
+.d3{transition-delay:.24s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .hero-left{order:1}
+  .hero-p{margin:0 auto 28px}
+  .trow{justify-content:center}
+  .hero-right{order:2;justify-content:center;padding:0}
+  .hero-circle{width:340px;height:340px}
+  .notif-card{top:40px;left:-20px;min-width:220px}
+  .spl,.spl-alt{grid-template-columns:1fr}
+  .spl-alt .spimg,.spl-alt .spbdy{order:unset}
+  .spimg{min-height:240px}
+  .spbdy{padding:44px 28px}
+  .pgrd,.tgrid,.sgrid{grid-template-columns:1fr 1fr}
+  .sbar{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .nlinks{display:none}
+  .hbg{display:block}
+  .fr2,.rg{grid-template-columns:1fr}
+  .fbdy,.ffoot,.fleg{padding-left:20px;padding-right:20px}
+  .stpbar{padding:16px 20px 0}
+  .ftop{padding:20px}
+}
+@media(max-width:640px){
+  .wrap{padding:0 20px}
+  .pgrd,.tgrid,.sgrid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .hero-circle{width:280px;height:280px}
+  .notif-card{min-width:190px;left:-10px}
+}
+</style>
+</head>
+<body>
+
+<!-- LANGUAGE BAR -->
+<div class="lbar">
+  <span class="llbl">🌐</span>
+  <button class="lbtn on" onclick="setLang(this,'en')">English</button>
+  <button class="lbtn" onclick="setLang(this,'ar')">العربية</button>
+  <button class="lbtn" onclick="setLang(this,'fr')">Français</button>
+  <button class="lbtn" onclick="setLang(this,'es')">Español</button>
+  <button class="lbtn" onclick="setLang(this,'pt')">Português</button>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="#" class="logo">niftism<span>.</span></a>
+    <div class="nlinks">
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nr">
+      <button class="nlog">Log in</button>
+      <button class="ncta" onclick="goForm()">Start my LLC</button>
+    </div>
+    <button class="hbg" onclick="toggleMob()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mobMenu">
+  <div class="mobhd">
+    <span class="logo">niftism<span style="color:var(--g)">.</span></span>
+    <button class="mobx" onclick="toggleMob()">✕</button>
+  </div>
+  <div class="moblinks">
+    <a href="#how" onclick="toggleMob()">How it works</a>
+    <a href="#pricing" onclick="toggleMob()">Pricing</a>
+    <a href="#platforms" onclick="toggleMob()">Platforms</a>
+    <a href="#faq" onclick="toggleMob()">FAQ</a>
+  </div>
+  <button class="btn bg" style="font-size:16px;padding:14px 28px;margin-top:8px" onclick="goForm();toggleMob()">Start my Florida LLC</button>
+</div>
+
+<!-- ================================================================
+     HERO — Exact ZenBusiness layout from screenshot
+     Left: text + big green pill button + Trustpilot
+     Right: large circle photo + floating notification card
+================================================================ -->
+<section class="hero">
+  <div class="wrap">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-eye">Form your Florida LLC today</div>
+      <h1 class="hero-h1">
+        Start and Sell<br>
+        in the <span class="hl">US Market</span>
+      </h1>
+      <p class="hero-p">Get your Florida LLC, EIN, and US banking without living in the United States. Built for foreign entrepreneurs selling on Stripe, Amazon, and Shopify.</p>
+      <button class="hero-cta" onclick="goForm()">Form my Florida LLC</button>
+      <div class="hero-sub">Get started in minutes — $297 + $125 Florida state fee</div>
+      <!-- Trustpilot row — exact ZenBusiness style -->
+      <div class="tp-row">
+        <span class="tp-label">Excellent</span>
+        <div class="tp-stars">
+          <!-- 5 filled green squares like ZenBusiness -->
+          <div class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div class="tp-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        </div>
+        <span class="tp-count">1,240 reviews</span>
+        <div class="tp-logo">
+          <div class="tp-ico">★</div>
+          Trustpilot
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT — large circle + notification card -->
+    <div class="hero-right">
+      <!-- Floating notification card — top left of image, like ZenBusiness -->
+      <div class="notif-card">
+        <div class="notif-icon">N</div>
+        <div class="notif-body">
+          <div class="notif-top">
+            <span class="notif-brand">Niftism</span>
+            <span class="notif-time">2m ago</span>
+          </div>
+          <div class="notif-name">Global Ventures LLC</div>
+          <div class="notif-msg">Congratulations! Your Florida LLC formation has been completed.</div>
+        </div>
+      </div>
+      <!-- Large circle image — exact ZenBusiness ~480px -->
+      <div class="hero-circle">
+        <img
+          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=960&h=960&q=85&auto=format&fit=crop&crop=top"
+          alt="Entrepreneur celebrating LLC approval">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="sbar">
+  <div class="si-"><div class="sn">1–2</div><div class="sl-">Business day approval</div></div>
+  <div class="si-"><div class="sn">$125</div><div class="sl-">FL state fee included</div></div>
+  <div class="si-"><div class="sn">50+</div><div class="sl-">Countries served</div></div>
+  <div class="si-"><div class="sn">100%</div><div class="sl-">Online, no notary</div></div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="sh cen rv">
+      <div class="eye">The process</div>
+      <h2 class="h2">From application to approved — 4 steps</h2>
+      <p class="sub">We handle everything with Florida's official Sunbiz.org portal — 1–2 business day processing.</p>
+    </div>
+    <div class="sgrid">
+      <div class="sc- rv">
+        <!-- 80px circle images — same proportional ZenBusiness size -->
+        <div class="sci"><img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=160&h=160&q=80&auto=format&fit=crop" alt="Fill form"></div>
+        <div class="snum">1</div>
+        <div class="stit">Fill our form</div>
+        <div class="sdsc">Complete our Sunbiz-aligned intake in under 10 minutes — same required fields, cleaner experience.</div>
+      </div>
+      <div class="sc- rv d1">
+        <div class="sci"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=160&h=160&q=80&auto=format&fit=crop" alt="We file"></div>
+        <div class="snum">2</div>
+        <div class="stit">We file with Sunbiz</div>
+        <div class="sdsc">We submit your Articles of Organization to Florida's Division of Corporations electronically.</div>
+      </div>
+      <div class="sc- rv d2">
+        <div class="sci"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=160&h=160&q=80&auto=format&fit=crop" alt="Approved"></div>
+        <div class="snum">3</div>
+        <div class="stit">Get approved</div>
+        <div class="sdsc">Florida processes in 1–2 business days. Receive your official Certificate + EIN by email.</div>
+      </div>
+      <div class="sc- rv d3">
+        <div class="sci"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=160&h=160&q=80&auto=format&fit=crop" alt="Launch platforms"></div>
+        <div class="snum">4</div>
+        <div class="stit">Launch your platforms</div>
+        <div class="sdsc">Use your Florida LLC + EIN to activate Stripe, Amazon, Shopify Payments, and PayPal.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT 1 -->
+<section class="spl rv">
+  <div class="spimg"><img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=800&q=80&auto=format&fit=crop" alt="Global entrepreneurs"></div>
+  <div class="spbdy">
+    <div class="eye">For foreign founders</div>
+    <h2 class="h2">You don't need to live in the US to own a Florida LLC</h2>
+    <p class="bpara">Florida has no residency requirement for LLC owners. We specialize exclusively in Florida — we know every requirement, form, and Sunbiz timeline.</p>
+    <div class="cks">
+      <div class="ck"><div class="cki">✓</div>No US address required — we provide one</div>
+      <div class="ck"><div class="cki">✓</div>No notarization or apostille needed</div>
+      <div class="ck"><div class="cki">✓</div>No ITIN required for your EIN application</div>
+      <div class="ck"><div class="cki">✓</div>$125 state fee — one of the lowest in the US</div>
+    </div>
+    <button class="btn bg" onclick="goForm()">Start my Florida LLC →</button>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="plat" id="platforms">
+  <div class="wrap">
+    <div class="sh cen rv">
+      <div class="eye">Platform approvals</div>
+      <h2 class="h2">Get approved where it counts</h2>
+      <p class="sub">Your Florida LLC + EIN unlocks every major US selling and payment platform.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pc rv"><div class="plogo" style="color:#635BFF">stripe</div><div class="pname">Stripe Payments</div><div class="pok">✓ Verified compatible</div></div>
+      <div class="pc rv d1"><div class="plogo" style="color:#FF9900">amazon</div><div class="pname">Amazon Seller</div><div class="pok">✓ Verified compatible</div></div>
+      <div class="pc rv d2"><div class="plogo" style="color:#5A8A3C">shopify</div><div class="pname">Shopify Payments</div><div class="pok">✓ Verified compatible</div></div>
+      <div class="pc rv d3"><div class="plogo" style="color:#003087">paypal</div><div class="pname">PayPal Business</div><div class="pok">✓ Verified compatible</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT 2 -->
+<section class="spl spl-alt rv">
+  <div class="spimg"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80&auto=format&fit=crop" alt="Official Florida filing"></div>
+  <div class="spbdy">
+    <div class="eye">Official Florida filing</div>
+    <h2 class="h2">Filed directly with Sunbiz.org — Florida's official state portal</h2>
+    <p class="bpara">No third-party processors. Every Niftism LLC is submitted through Florida's official Division of Corporations e-filing system per s.605.0201, F.S.</p>
+    <div class="cks">
+      <div class="ck"><div class="cki">✓</div>Articles of Organization per s.605.0201, F.S.</div>
+      <div class="ck"><div class="cki">✓</div>Registered Agent on public Sunbiz records</div>
+      <div class="ck"><div class="cki">✓</div>BOI / FinCEN compliance (Scale+ plans)</div>
+      <div class="ck"><div class="cki">✓</div>Annual report reminders — never lose good standing</div>
+    </div>
+    <a href="https://dos.fl.gov/sunbiz/" target="_blank" rel="noopener" class="btn bo">View Sunbiz.org →</a>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pric" id="pricing">
+  <div class="wrap">
+    <div class="sh cen rv">
+      <div class="eye">Florida LLC Packages</div>
+      <h2 class="h2">Simple, transparent pricing</h2>
+      <p class="sub">$125 Florida state fee included in all plans · No hidden fees · Filed via official Sunbiz.org</p>
+    </div>
+    <div class="pgrd">
+      <div class="pcard rv">
+        <div class="pce">STARTER</div>
+        <div class="pcn">Launch</div>
+        <div class="pcfor">Solo founders, first US venture</div>
+        <div class="pcp">$297 <span class="pcfr">total</span></div>
+        <div class="pcfe">Includes $125 Florida state fee</div>
+        <button class="pcbtn pcbo" onclick="setPlan('launch');goForm()">Get started</button>
+        <div class="pcdiv"></div>
+        <ul class="pcul">
+          <li><span class="fchk">✓</span>Florida Articles of Organization</li>
+          <li><span class="fchk">✓</span>Registered Agent (1 year)</li>
+          <li><span class="fchk">✓</span>EIN application (IRS)</li>
+          <li><span class="fchk">✓</span>Operating agreement</li>
+          <li><span class="fchk">✓</span>Stripe &amp; Amazon setup guides</li>
+          <li><span class="fchk">✓</span>Email support (48h)</li>
+        </ul>
+      </div>
+      <div class="pcard feat rv d1">
+        <div class="ppill">★ Most Popular</div>
+        <div class="pce">GROWTH</div>
+        <div class="pcn">Scale</div>
+        <div class="pcfor">Active Amazon &amp; Shopify sellers</div>
+        <div class="pcp">$597 <span class="pcfr">+ $99/yr</span></div>
+        <div class="pcfe">Includes $125 Florida state fee</div>
+        <button class="pcbtn pcbg" onclick="setPlan('scale');goForm()">Get started</button>
+        <div class="pcdiv"></div>
+        <ul class="pcul">
+          <li><span class="fchk">✓</span>Everything in Launch</li>
+          <li><span class="fpls">+</span>Priority 3-day Sunbiz filing</li>
+          <li><span class="fpls">+</span>Florida virtual business address</li>
+          <li><span class="fpls">+</span>BOI / FinCEN filing (required)</li>
+          <li><span class="fpls">+</span>Mercury / Relay banking intro</li>
+          <li><span class="fpls">+</span>30-min onboarding call</li>
+          <li><span class="fpls">+</span>Annual report assistance</li>
+          <li><span class="fpls">+</span>Shopify &amp; PayPal walkthrough</li>
+        </ul>
+      </div>
+      <div class="pcard rv d2">
+        <div class="pce">AUTHORITY</div>
+        <div class="pcn">Dominate</div>
+        <div class="pcfor">Serious e-commerce operators</div>
+        <div class="pcp">$997 <span class="pcfr">+ $149/yr</span></div>
+        <div class="pcfe">Includes $125 Florida state fee</div>
+        <button class="pcbtn pcbo" onclick="setPlan('dom');goForm()">Get started</button>
+        <div class="pcdiv"></div>
+        <ul class="pcul">
+          <li><span class="fchk">✓</span>Everything in Scale</li>
+          <li><span class="fpls">+</span>DUNS number application</li>
+          <li><span class="fpls">+</span>Business credit foundation</li>
+          <li><span class="fpls">+</span>Tax strategy intro (US + home)</li>
+          <li><span class="fpls">+</span>Trademark search (1 class)</li>
+          <li><span class="fpls">+</span>Mail forwarding (6 months)</li>
+          <li><span class="fpls">+</span>Managed annual compliance</li>
+          <li><span class="fpls">+</span>VIP 24h dedicated support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="reviews">
+  <div class="wrap">
+    <div class="sh cen rv">
+      <div class="eye">Customer reviews</div>
+      <h2 class="h2">Trusted by founders worldwide</h2>
+      <p class="sub">Real stories from foreign entrepreneurs selling in the US market</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <div class="tq">"I was selling on Amazon from Saudi Arabia and kept getting rejected. Niftism formed my Florida LLC in one day. Stripe was approved within the week. Complete game changer."</div>
+        <div class="tp_">
+          <div class="av"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Khalid"></div>
+          <div><div class="avn">Khalid A.</div><div class="avl">Riyadh, Saudi Arabia</div></div>
+        </div>
+      </div>
+      <div class="tcard rv d1">
+        <div class="stars">★★★★★</div>
+        <div class="tq">"Le processus était simple et rapide. En 2 jours j'avais mon LLC Florida et mon EIN. Je vends maintenant sur Shopify aux États-Unis sans aucun problème."</div>
+        <div class="tp_">
+          <div class="av"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Amina"></div>
+          <div><div class="avn">Amina D.</div><div class="avl">Casablanca, Morocco</div></div>
+        </div>
+      </div>
+      <div class="tcard rv d2">
+        <div class="stars">★★★★★</div>
+        <div class="tq">"Formé mi LLC en Florida en 2 días. Me ayudaron con EIN, cuenta bancaria y aprobación de Amazon. 100% recomendado para cualquier extranjero."</div>
+        <div class="tp_">
+          <div class="av"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Carlos"></div>
+          <div><div class="avn">Carlos M.</div><div class="avl">Bogotá, Colombia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="fsec" id="form">
+  <div class="wrap">
+    <div class="fhdr">
+      <div class="eye">Start today</div>
+      <h2 class="h2">Florida LLC Application</h2>
+      <p class="sub">Fields mirror Florida's official Sunbiz.org Articles of Organization</p>
+    </div>
+    <div class="fwrap">
+      <div class="ftop">
+        <div class="fteye">🏛 Official Sunbiz.org filing · Florida Division of Corporations</div>
+        <h2>Florida Articles of Organization</h2>
+        <p>$125 Florida state fee included · Filed electronically via Sunbiz.org · s.605.0201, F.S.</p>
+      </div>
+      <div class="stpbar" id="stpbar">
+        <div class="sti" id="sti1"><div class="stc ac" id="stc1">1</div><div class="stl ac" id="stl1">LLC Name</div></div>
+        <div class="sti" id="sti2"><div class="stc" id="stc2">2</div><div class="stl" id="stl2">Addresses</div></div>
+        <div class="sti" id="sti3"><div class="stc" id="stc3">3</div><div class="stl" id="stl3">Reg. Agent</div></div>
+        <div class="sti" id="sti4"><div class="stc" id="stc4">4</div><div class="stl" id="stl4">Members</div></div>
+        <div class="sti" id="sti5"><div class="stc" id="stc5">5</div><div class="stl" id="stl5">Package</div></div>
+      </div>
+      <div class="fbdy">
+
+        <div class="fp- on" id="fp1">
+          <div class="ib"><strong>Florida naming rules:</strong> Your LLC name must end in "LLC," "L.L.C.," or "Limited Liability Company" and be distinguishable on Sunbiz. We do a free name search before filing.</div>
+          <div class="fg-"><div class="fl-">Desired LLC name <span class="req">*</span></div><input type="text" placeholder="e.g. Global Ventures LLC"><div class="fh-">Must include LLC, L.L.C., or Limited Liability Company. We verify availability on Sunbiz.org before filing.</div></div>
+          <div class="fg-"><div class="fl-">Alternate name (if first choice unavailable)</div><input type="text" placeholder="e.g. Global Ventures Group LLC"></div>
+          <div class="fg-"><div class="fl-">Business purpose <span class="req">*</span></div>
+            <div class="rg" id="purpG">
+              <div class="rc on" onclick="sel('purpG',this)"><span class="rdot"></span>E-commerce / FBA</div>
+              <div class="rc" onclick="sel('purpG',this)"><span class="rdot"></span>Amazon / Marketplace</div>
+              <div class="rc" onclick="sel('purpG',this)"><span class="rdot"></span>Digital / SaaS</div>
+              <div class="rc" onclick="sel('purpG',this)"><span class="rdot"></span>Dropshipping</div>
+            </div>
+          </div>
+          <div class="fg-"><div class="fl-">Effective date</div>
+            <div class="rg" id="effG">
+              <div class="rc on" onclick="sel('effG',this)"><span class="rdot"></span>File immediately</div>
+              <div class="rc" onclick="sel('effG',this)"><span class="rdot"></span>Specific future date</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fp-" id="fp2">
+          <div class="ib"><strong>Florida address requirement:</strong> Principal office must be a physical Florida street address — P.O. Box not accepted by Sunbiz. A Florida address is provided in your plan.</div>
+          <div class="fg-"><div class="fl-">Principal office address (Florida) <span class="req">*</span></div><input type="text" value="Niftism FL address — included in plan" readonly><div class="fh-">Real Florida street address included in all plans. Appears on your public Sunbiz listing.</div></div>
+          <div class="fr2">
+            <div><div class="fl-">City <span class="req">*</span></div><input type="text" value="Florida, USA" readonly></div>
+            <div><div class="fl-">ZIP code</div><input type="text" placeholder="Provided with address"></div>
+          </div>
+          <div class="fg-"><div class="fl-">Mailing address</div>
+            <div class="rg" id="mailG">
+              <div class="rc on" onclick="sel('mailG',this)"><span class="rdot"></span>Same as principal office</div>
+              <div class="rc" onclick="sel('mailG',this)"><span class="rdot"></span>Different (P.O. Box OK)</div>
+            </div>
+          </div>
+          <div class="fg-"><div class="fl-">Home country address (our records)</div><input type="text" placeholder="Street, City, Country — not filed with state"></div>
+        </div>
+
+        <div class="fp-" id="fp3">
+          <div class="sb"><strong>Registered Agent:</strong> Florida law requires every LLC to have a Registered Agent with a physical Florida address, available during business hours. Niftism serves as your RA — included in all plans.</div>
+          <div class="fg-"><div class="fl-">Registered Agent <span class="req">*</span></div>
+            <div class="rg" id="raG">
+              <div class="rc on" onclick="sel('raG',this)"><span class="rdot"></span>Niftism (included in plan)</div>
+              <div class="rc" onclick="sel('raG',this)"><span class="rdot"></span>I have my own Florida RA</div>
+            </div>
+            <div class="fh-">P.O. Box or out-of-state address not acceptable per Florida law.</div>
+          </div>
+          <div class="fg-"><div class="fl-">RA Florida address</div><input type="text" value="Niftism — Florida, USA (physical address provided)" readonly></div>
+          <div class="fg-"><div class="fl-">RA signature authorization <span class="req">*</span></div>
+            <div class="rg" id="sigG">
+              <div class="rc on" onclick="sel('sigG',this)"><span class="rdot"></span>Authorize Niftism to sign as RA</div>
+              <div class="rc" onclick="sel('sigG',this)"><span class="rdot"></span>I will sign separately</div>
+            </div>
+            <div class="fh-">Per s.831.06, F.S. — signing without authorization constitutes forgery. Authorizing Niftism allows same-day submission.</div>
+          </div>
+          <div class="wb"><strong>Note:</strong> RA changes after filing require a $25 amendment fee. Your Niftism RA includes annual renewal reminders.</div>
+        </div>
+
+        <div class="fp-" id="fp4">
+          <div class="ib"><strong>Public records notice:</strong> Florida recommends listing members or managers on Sunbiz. This becomes public record. Street address required — P.O. Box not accepted for this field.</div>
+          <div class="fg-"><div class="fl-">Management structure <span class="req">*</span></div>
+            <div class="rg" id="mgmtG">
+              <div class="rc on" onclick="sel('mgmtG',this)"><span class="rdot"></span>Member-managed (most common)</div>
+              <div class="rc" onclick="sel('mgmtG',this)"><span class="rdot"></span>Manager-managed</div>
+            </div>
+          </div>
+          <div class="fr2">
+            <div><div class="fl-">Full legal name <span class="req">*</span></div><input type="text" placeholder="As on your passport"></div>
+            <div><div class="fl-">Country of citizenship <span class="req">*</span></div><input type="text" placeholder="e.g. Saudi Arabia"></div>
+          </div>
+          <div class="fg-"><div class="fl-">Member street address <span class="req">*</span></div><input type="text" placeholder="Home country full street address"><div class="fh-">Becomes public record on Sunbiz. P.O. Box not accepted. Home country address is acceptable.</div></div>
+          <div class="fr2">
+            <div><div class="fl-">Email <span class="req">*</span></div><input type="email" placeholder="your@email.com"></div>
+            <div><div class="fl-">WhatsApp / phone</div><input type="tel" placeholder="+1 or international"></div>
+          </div>
+          <div class="fg-"><div class="fl-">Passport or national ID number</div><input type="text" placeholder="Required by IRS for EIN — not filed with Florida state"></div>
+        </div>
+
+        <div class="fp-" id="fp5">
+          <div class="fg-"><div class="fl-">Select your plan <span class="req">*</span></div>
+            <div id="planOpts">
+              <div class="popt" id="po-launch" onclick="setPlan('launch')">
+                <div class="pol"><span class="rdot" id="pd-launch"></span><div><div class="pnm">Launch</div><div class="pds">LLC + EIN + RA + Guides</div></div></div>
+                <div class="ppr">$297</div>
+              </div>
+              <div class="popt on" id="po-scale" onclick="setPlan('scale')">
+                <div class="pol"><span class="rdot" id="pd-scale" style="background:var(--g);border-color:var(--g)"></span><div><div class="pnm">Scale — Most Popular</div><div class="pds">+ FL Address, BOI Filing, Banking, Call</div></div></div>
+                <div class="ppr">$597</div>
+              </div>
+              <div class="popt" id="po-dom" onclick="setPlan('dom')">
+                <div class="pol"><span class="rdot" id="pd-dom"></span><div><div class="pnm">Dominate</div><div class="pds">+ DUNS, Credit, Tax, Trademark</div></div></div>
+                <div class="ppr">$997</div>
+              </div>
+            </div>
+          </div>
+          <div class="trow2">
+            <div><div class="tl2" id="totLbl">Scale — Total due today</div><div class="tsub">$125 FL state fee included · Stripe checkout · 1–2 day approval</div></div>
+            <div class="tp2" id="totP">$597</div>
+          </div>
+          <div class="fg-"><div class="fl-">Target platforms</div>
+            <div class="rg" id="platG" style="grid-template-columns:1fr 1fr">
+              <div class="rc on" onclick="togPlat(this)"><span class="rdot" style="background:var(--g);border-color:var(--g)"></span>Stripe Payments</div>
+              <div class="rc" onclick="togPlat(this)"><span class="rdot"></span>Amazon / FBA</div>
+              <div class="rc" onclick="togPlat(this)"><span class="rdot"></span>Shopify Payments</div>
+              <div class="rc" onclick="togPlat(this)"><span class="rdot"></span>PayPal Business</div>
+            </div>
+          </div>
+          <button class="subbtn" onclick="handleSubmit()">🔒 Pay &amp; Submit — Stripe Checkout</button>
+          <div style="text-align:center;font-size:12px;color:var(--t3);margin-top:10px">Secured by Stripe · SSL encrypted · Money-back guarantee</div>
+        </div>
+
+      </div>
+      <div class="fleg">🔒 All information filed with Florida Division of Corporations via official Sunbiz.org · Public records apply per Florida law · Niftism is not a law firm.</div>
+      <div class="ffoot">
+        <span class="flbl" id="fLbl">Step 1 of 5</span>
+        <div class="fnav">
+          <button class="fbk" id="fbk" onclick="prevStep()" style="display:none">← Back</button>
+          <button class="fnx" id="fnx" onclick="nextStep()">Continue →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sh cen rv">
+      <div class="eye">Questions answered</div>
+      <h2 class="h2">Frequently asked questions</h2>
+      <p class="sub">Everything foreign founders ask before forming their Florida LLC</p>
+    </div>
+    <div class="faqlist">
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">Can I form a Florida LLC if I don't live in the US?<span class="faqico">+</span></div><div class="faqa">Yes. Florida has no residency requirement for LLC owners. You can be from any country. The only requirements are a Florida Registered Agent (Niftism provides this) and a principal office address in Florida (included in all plans).</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">How long does Florida LLC approval take?<span class="faqico">+</span></div><div class="faqa">Florida's Sunbiz.org processes LLC filings in 1–2 business days. Once approved, you receive your Certificate of Organization by email. EIN from the IRS typically takes 1–5 additional business days.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">What is the $125 Florida state fee?<span class="faqico">+</span></div><div class="faqa">$125 is Florida's official filing fee for Articles of Organization, including a $25 Registered Agent designation fee charged by the Florida Division of Corporations. This is included in all Niftism plans — no hidden extras.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">Will my Florida LLC get me approved on Stripe and Amazon?<span class="faqico">+</span></div><div class="faqa">Yes. A Florida LLC with a valid EIN is fully accepted by Stripe, Amazon Seller Central, Shopify Payments, and PayPal Business. Our setup guides walk you through each platform's verification process.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">What is BOI / FinCEN filing?<span class="faqico">+</span></div><div class="faqa">The Beneficial Ownership Information (BOI) report is a federal requirement for most new LLCs. Penalties for non-filing can reach $500/day. Included in Scale and Dominate plans, and $49 add-on in Launch.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">Do I need an ITIN or SSN to get an EIN?<span class="faqico">+</span></div><div class="faqa">No. Foreign nationals can obtain an EIN using a passport or national ID number — no ITIN or SSN needed. Niftism handles this for you, included in all plans.</div></div>
+      <div class="faqitem"><div class="faqq" onclick="togFaq(this)">What languages do you support?<span class="faqico">+</span></div><div class="faqa">We support English, Arabic, French, Spanish, and Portuguese. Support calls and email are available in all five languages. Select your language at the top of the page.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="h2">Ready to sell in the US market?</h2>
+    <p>Join founders from 50+ countries who formed their Florida LLC with Niftism</p>
+    <button class="hero-cta" onclick="goForm()">Form my Florida LLC →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">niftism<span>.</span></div>
+        <div class="ftag">Florida LLC formation specialists for foreign entrepreneurs. We file directly with Sunbiz.org — fast, transparent, and built for global sellers.</div>
+        <div class="fdisc">© 2026 Niftism · Based in Florida, USA · niftism.com<br>Not a law firm. $125 FL state fee included in all plans.</div>
+      </div>
+      <div>
+        <div class="fcolh">Services</div>
+        <ul class="flinks">
+          <li><a href="#form">Florida LLC Formation</a></li>
+          <li><a>Registered Agent</a></li>
+          <li><a>EIN Application</a></li>
+          <li><a>BOI / FinCEN Filing</a></li>
+          <li><a>Annual Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fcolh">Platforms</div>
+        <ul class="flinks">
+          <li><a>Stripe Setup</a></li>
+          <li><a>Amazon Seller</a></li>
+          <li><a>Shopify Payments</a></li>
+          <li><a>PayPal Business</a></li>
+          <li><a>Mercury Banking</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fcolh">Languages</div>
+        <ul class="flinks">
+          <li><a onclick="setLang(null,'en')">English</a></li>
+          <li><a onclick="setLang(null,'ar')">العربية</a></li>
+          <li><a onclick="setLang(null,'fr')">Français</a></li>
+          <li><a onclick="setLang(null,'es')">Español</a></li>
+          <li><a onclick="setLang(null,'pt')">Português</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <div class="fbot-l">$125 FL state fee included · Filed via Sunbiz.org · 1–2 day approval · 50+ countries</div>
+      <div class="fbot-r">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>Refund Policy</a>
+        <a href="https://dos.fl.gov/sunbiz/" target="_blank" rel="noopener">Sunbiz.org ↗</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── FORM ── */
+let cur=1,tot=5;
+function upd(){
+  for(let i=1;i<=tot;i++){
+    const c=document.getElementById('stc'+i),l=document.getElementById('stl'+i),s=document.getElementById('sti'+i);
+    if(i<cur){c.className='stc dn';c.textContent='✓';l.className='stl';s.className='sti dn';}
+    else if(i===cur){c.className='stc ac';c.textContent=i;l.className='stl ac';s.className='sti';}
+    else{c.className='stc';c.textContent=i;l.className='stl';s.className='sti';}
+  }
+  document.getElementById('fLbl').textContent='Step '+cur+' of '+tot;
+  document.getElementById('fbk').style.display=cur>1?'block':'none';
+  document.getElementById('fnx').textContent=cur===tot?'Submit →':'Continue →';
+}
+function nextStep(){
+  if(cur<tot){document.getElementById('fp'+cur).className='fp-';cur++;document.getElementById('fp'+cur).className='fp- on';upd();document.getElementById('form').scrollIntoView({behavior:'smooth',block:'start'});}
+  else handleSubmit();
+}
+function prevStep(){if(cur>1){document.getElementById('fp'+cur).className='fp-';cur--;document.getElementById('fp'+cur).className='fp- on';upd();}}
+function sel(g,el){document.querySelectorAll('#'+g+' .rc').forEach(c=>c.classList.remove('on'));el.classList.add('on');}
+function togPlat(el){el.classList.toggle('on');const d=el.querySelector('.rdot');d.style.background=el.classList.contains('on')?'var(--g)':'transparent';d.style.borderColor=el.classList.contains('on')?'var(--g)':'var(--bdr)';}
+const plans={launch:{lbl:'Launch — Total due today',p:'$297'},scale:{lbl:'Scale — Total due today',p:'$597'},dom:{lbl:'Dominate — Total due today',p:'$997'}};
+function setPlan(p){
+  ['launch','scale','dom'].forEach(x=>{const po=document.getElementById('po-'+x),pd=document.getElementById('pd-'+x);if(po)po.classList.remove('on');if(pd){pd.style.background='transparent';pd.style.borderColor='var(--bdr)';}});
+  const po=document.getElementById('po-'+p),pd=document.getElementById('pd-'+p);
+  if(po)po.classList.add('on');if(pd){pd.style.background='var(--g)';pd.style.borderColor='var(--g)';}
+  document.getElementById('totLbl').textContent=plans[p].lbl;
+  document.getElementById('totP').textContent=plans[p].p;
+}
+function handleSubmit(){alert('Replace handleSubmit() with your Stripe Payment Link URL:\nwindow.location.href = "https://buy.stripe.com/YOUR_LINK"');}
+function goForm(){document.getElementById('form').scrollIntoView({behavior:'smooth'});}
+function toggleMob(){const m=document.getElementById('mobMenu');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
+function setLang(btn,lang){document.querySelectorAll('.lbtn').forEach(b=>b.classList.remove('on'));if(btn)btn.classList.add('on');}
+function togFaq(el){const it=el.parentElement,was=it.classList.contains('open');document.querySelectorAll('.faqitem.open').forEach(i=>i.classList.remove('open'));if(!was)it.classList.add('open');}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vi');});},{threshold:0.1});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+setPlan('scale');
+upd();
+</script>
+</body>
+</html>
